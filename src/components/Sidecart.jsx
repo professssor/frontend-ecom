@@ -15,8 +15,9 @@ function Sidecart() {
   // value of the cart array  to be used
   const products = useRecoilValue(cartState);
 
+console.log(products)
 
-  // data for product from product page
+  // data for product from product pages
   // const productInfo = useRecoilValue(productDataPassed);
 
   // used to delete items /reset the cart

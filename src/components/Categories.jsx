@@ -5,7 +5,7 @@ function Categories() {
   return (
     <div className="categories-container  ">
       <div className="men ">
-              <Link to={`/products/2`}>
+              <Link to={`/products/1`}>
             <button className=" aligning text-lg font-medium relative bg-black text-white  h-16 w-40 ">MEN</button>
             </Link>
         <img className="img-properties" src="https://images.unsplash.com/photo-1623451377886-36671ab29f50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
@@ -13,7 +13,7 @@ function Categories() {
        
       </div>
 <div className="women">
-    <Link to={`/products/3`}><button className=" aligning bg-black text-lg  font-medium relative  h-16 w-40   text-white ">WOMEN </button></Link>
+    <Link to={`/products/2`}><button className=" aligning bg-black text-lg  font-medium relative  h-16 w-40   text-white ">WOMEN </button></Link>
 
     
    <img className="img-properties" src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />

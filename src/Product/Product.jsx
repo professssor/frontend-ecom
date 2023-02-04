@@ -9,13 +9,14 @@ import {  useRecoilState } from "recoil";
 import cartState from "../atoms/cart";
 
 
-
 const apiUploadURL = "http://localhost:1337";
 
 function Product() {
   const subCategoryId = parseInt(useParams().id);
   // to transfer info to cart page
   const [cart, setCart] = useRecoilState(cartState);
+  
+
 // use state to send an alert div when add to cart is being pressed after item is already present in cart
   const [revealText,setRevealText]=useState(false);
   //use recoil state to transfer product data over for functions in sidecart component

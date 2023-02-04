@@ -56,12 +56,12 @@ export default function Navbar() {
         {openNav ? (
           <div className=" lg:hidden bg-black  options-container  text-white h-64 text-center ">
             <div className=" link-container">
-            <a href="/products/2" className=" text-lg p-1  hover:text-gray-500">
+            <a href="/products/1" className=" text-lg p-1  hover:text-gray-500">
               <h3>Men</h3>
             </a>
                 
        
-            <a href="/products/3" className=" text-lg p-1 hover:text-gray-500">
+            <a href="/products/2" className=" text-lg p-1 hover:text-gray-500">
               <h3>Women</h3>
             </a>
             

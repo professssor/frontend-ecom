@@ -82,7 +82,7 @@ const handleChange=(e)=>{
       <div className=' w-full  h-64 product-showcase-header-image rounded-md '> 
           <img  className='rounded-md stock-img  object-cover' src="https://i.pinimg.com/originals/77/f1/bf/77f1bfbedd14cbd04360164e6fce42a0.jpg" alt="" />
       </div>
-       <h1 className='font-light text-3xl  w-full p-2'>{categoryId===2? "Men's section": "Women's section"} <span><CheckCircleOutlineIcon/></span></h1>
+       <h1 className='font-light text-3xl  w-full p-2'>{categoryId===1? "Men's section": "Women's section"} <span><CheckCircleOutlineIcon/></span></h1>
     <div className= 'rounded-md  mt-6  p-2  bg-gray-100 border-1 w-full mx-auto '>
   <List catId={categoryId}  sort={sort} maxPrice ={maxPrice} selectedCat={selectedbox} />
     

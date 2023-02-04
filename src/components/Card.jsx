@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const apiUploadURL ="http://localhost:1337"
+const apiUploadURL = "http://localhost:1337";
 
 function Card({item,}) {
 

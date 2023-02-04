@@ -50,7 +50,7 @@
     
           <div className='w-full md:6/12 text-center mt-6 secondpart md:flex  md:flex-row md:justify-center mt-12  '>
             <div className=' md:mr-4   md:flex justify-end items-center space-x-2 '>
-        <h1 className='font-semibold text-xs'>Eastern Store</h1>
+        <h1 className='font-semibold text-xs'>KickingKits.com</h1>
         <span className=' text-xs lorem-text  '>© Copyright 2023. All Rights Reserved</span>
             </div>
        
