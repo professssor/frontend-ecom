@@ -15,6 +15,7 @@ function Sidecart() {
 
   // value of the cart array  to be used
   const products = useRecoilValue(cartState);
+  console.log(products)
 
 
 
@@ -31,7 +32,7 @@ function Sidecart() {
     let total = 0;
 
     products.forEach(
-      (item) => (total += item.quantity * item.attributes.price)
+      (item) => (total += item?.quantity * item?.attributes?.price)
     );
 
     return total.toFixed(2);
@@ -88,7 +89,7 @@ function Sidecart() {
                 <h1 className="font-bold ">{item?.attributes?.title}</h1>
                 <p className="lorem-text">{item?.attributes?.desc}</p>
                 <div className="item-price text-blue-500 ">
-                  {item.quantity} × ₹{item?.attributes?.price}{" "}
+                  {item?.quantity} × ₹{item?.attributes?.price}{" "}
                 </div>
               </div>
               <div

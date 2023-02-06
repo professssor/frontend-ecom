@@ -15,7 +15,7 @@ function Product() {
   const subCategoryId = parseInt(useParams().id);
   // to transfer info to cart page
   const [cart, setCart] = useRecoilState(cartState);
-  
+
 
 // use state to send an alert div when add to cart is being pressed after item is already present in cart
   const [revealText,setRevealText]=useState(false);
@@ -31,7 +31,7 @@ function Product() {
       if (item.id === data.id) {
         return {
           ...item,
-         quantity: item.quantity + quantitySelected,
+         quantity: item?.quantity + quantitySelected,
         };
       
       } return item;
@@ -43,6 +43,7 @@ function Product() {
     setRevealText(true);
     } else {
     setCart([...cart, { ...data, quantity: quantitySelected }]);
+    console.log(cart)
     }
     // set timeout function to remove the error message after 10 sec 
  setTimeout(() => {
@@ -180,11 +181,12 @@ function Product() {
         </div>
         {/* add to cart */}
         <div>
-          <button
-            onClick={handleClick}
+          <button 
+            onClick={loading? null : handleClick}
             className="text-white font-medium text-sm bg-blue-300 hover:bg-blue-600 w-full  p-2 mt-6 mb-2  focus:outline-none  "
           >
             {" "}
+      
             <AddShoppingCartIcon />      Add to cart
           </button>
         {/* error text hidden div */}
