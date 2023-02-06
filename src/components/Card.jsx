@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const apiUploadURL = "http://localhost:1337";
 
-function Card({item,}) {
+const apiUploadURL = "https://ecommerce-web-app.onrender.com";
+
+function Card({item}) {
+
+
 
 
 
@@ -18,10 +21,10 @@ function Card({item,}) {
         <div className="featured-image-container   ">
           { item?.attributes.isNew ? <div className='p-2 m-1 absolute z-10  text-xs font-medium  border-2 text-black hover:font-black transition-all ease-in-out duration-500' ><span className=''>Must-Have</span></div> : null}
         
-                <img  className='card-image image-hover ' src={apiUploadURL + item?.attributes.img.data.attributes.url} alt="" />
+                <img  className='card-image image-hover ' src={item?.attributes.img.data[0].attributes.url} alt="" />
        
 
-             <img className='card-image ' src={apiUploadURL + item?.attributes.img2.data.attributes.url} alt="secondImg" />
+             <img className='card-image ' src={  item?.attributes.img2.data[0].attributes.url} alt="secondImg" />
   
     
            

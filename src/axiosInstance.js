@@ -1,7 +1,7 @@
 import axios from "axios";
 const apikey =
-  "dd738c412e9c88666c0a09e0f27f3f0b6cc4b0127d88941b78ec38c4598eb54dcb1bab6181b6e87e8226057a2cb590a8f312c1865f2c6585d266f419a78b28979730e9d91c70c0ba8becc43bd88b4f433f0ce4ef1a798de13608850f54b9486adc8ee17bffc4ae8690f03937e88dd51bab787e633e2e63b292e4bc76f5d543d8";
-const apiURL = "http://localhost:1337/api";
+  "9f31ab88c1e30cac7a93a5ceb5646c7e93a13661585d41e90582506be125b75c92675a8ec328ee8cc53c2bacdfe230740cf37c262b33c22091a18d5f2cc217e206a805e5fa35722539acd7bae9bcee4f91f2d000a38a56acb5b057e0989856753ace2e62c423ce965b221771782461207eba73652ca6e828aecdd92da68b33f3";
+const apiURL = "https://ecommerce-web-app.onrender.com/api";
 
 export const axiosInstance = axios.create({
   baseURL: apiURL,

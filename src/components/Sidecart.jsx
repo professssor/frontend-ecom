@@ -8,14 +8,15 @@ import { axiosInstance } from "../axiosInstance";
 
 import { Link } from "react-router-dom";
 
-const apiUploadURL = "http://localhost:1337";
+
+const apiUploadURL = "https://ecommerce-web-app.onrender.com";
 
 function Sidecart() {
 
   // value of the cart array  to be used
   const products = useRecoilValue(cartState);
 
-console.log(products)
+
 
   // data for product from product pages
   // const productInfo = useRecoilValue(productDataPassed);
@@ -77,7 +78,7 @@ console.log(products)
                 <img
                   className="h-full w-full object-cover rounded-sm "
                   src={
-                    apiUploadURL + item?.attributes?.img?.data?.attributes.url
+                      item?.attributes?.img?.data[0]?.attributes.url
                   }
                   alt=""
                 />

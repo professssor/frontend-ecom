@@ -9,7 +9,7 @@ import {  useRecoilState } from "recoil";
 import cartState from "../atoms/cart";
 
 
-const apiUploadURL = "http://localhost:1337";
+const apiUploadURL = "https://ecommerce-web-app.onrender.com/";
 
 function Product() {
   const subCategoryId = parseInt(useParams().id);
@@ -95,7 +95,7 @@ function Product() {
                 className={`w-24 h-24 object-cover my-4 ${
                   clickedImageOne ? `imageborder` : ""
                 }`}
-                src={apiUploadURL + data?.attributes?.img?.data?.attributes.url}
+                src={  data?.attributes?.img?.data[0]?.attributes.url}
                 alt=""
                 onClick={(e) => {
                   setMainImage("img");
@@ -108,7 +108,7 @@ function Product() {
                   clickedImageTwo ? `imageborder` : ""
                 }`}
                 src={
-                  apiUploadURL + data?.attributes?.img2?.data?.attributes.url
+                    data?.attributes?.img2?.data[0]?.attributes.url
                 }
                 alt=""
                 onClick={(e) => {
@@ -122,8 +122,8 @@ function Product() {
               <img
                 className="w-full h-full  object-cover"
                 src={
-                  apiUploadURL +
-                  data?.attributes?.[mainImage]?.data?.attributes.url
+                   
+                  data?.attributes?.[mainImage]?.data[0]?.attributes.url
                 }
                 alt=""
               />
