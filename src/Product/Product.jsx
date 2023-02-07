@@ -182,7 +182,7 @@ function Product() {
         {/* add to cart */}
         <div>
           <button 
-            onClick= {handleClick}
+            onClick= { loading ?null :handleClick}
             className="text-white font-medium text-sm bg-blue-300 hover:bg-blue-600 w-full  p-2 mt-6 mb-2  focus:outline-none  "
           >
             {" "}
