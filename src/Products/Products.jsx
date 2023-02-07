@@ -4,7 +4,7 @@ import {useParams} from "react-router-dom"
 import { useState } from 'react';
 import useFetch from '../hooks/useFetch';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-
+import ClipLoader from "react-spinners/ClipLoader";
 
 
 
@@ -42,8 +42,7 @@ const handleChange=(e)=>{
     <div className=' hidden md:block products-filter-container w-3/12  min-w-max  '>
       <div className='my-4  '>
         <h1 className="heading-filter-columm  ">Product Categories</h1>
-
-        {data?.map((item)=>
+{loading?<ClipLoader/>:   data?.map((item)=>
           (
                <div className='' key={item.id}  >
             <input type="checkbox" id ={item.id} value={item.id} name="hat" onChange={handleChange} />
@@ -51,6 +50,7 @@ const handleChange=(e)=>{
         </div>
           )
         )}
+     
  
 
     

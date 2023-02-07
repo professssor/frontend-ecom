@@ -7,6 +7,8 @@ import useFetch from "../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import {  useRecoilState } from "recoil";
 import cartState from "../atoms/cart";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 
 const apiUploadURL = "https://ecommerce-web-app.onrender.com/";
@@ -85,7 +87,7 @@ function Product() {
       {/* left part of the */}
 
       {loading ? (
-        " Loading"
+        <ClipLoader/>
       ) : (
         <>
           <div className="  selected-product-images  flex  mt-12 ">
@@ -182,7 +184,7 @@ function Product() {
         {/* add to cart */}
         <div>
           <button 
-            onClick= { loading ?null :handleClick}
+            onClick= { loading ? null :handleClick}
             className="text-white font-medium text-sm bg-blue-300 hover:bg-blue-600 w-full  p-2 mt-6 mb-2  focus:outline-none  "
           >
             {" "}
