@@ -10,7 +10,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 function Products() {
   const categoryId= parseInt(useParams().id) 
-  console.log(categoryId)
+
 
 
   const [maxPrice, setMaxPrice]= useState(10000);

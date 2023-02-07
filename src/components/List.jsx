@@ -12,7 +12,7 @@ function List({ catId, sort, maxPrice, selectedCat }) {
   const { data, error, loading } = useFetch(
     `/products?populate=*&[filters][categories][id]=${catId}${selectedCat.map((item)=>`&[filters][sub_categories][id][$eq]=${item}`)}&[filters][price][$lte]=${maxPrice}&sort=price:${sort} `
   );
-  console.log(data)
+
 
   return (
     <div className="flex flex-wrap">

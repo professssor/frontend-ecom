@@ -43,7 +43,7 @@ function Product() {
     setRevealText(true);
     } else {
     setCart([...cart, { ...data, quantity: quantitySelected }]);
-    console.log(cart)
+   
     }
     // set timeout function to remove the error message after 10 sec 
  setTimeout(() => {
@@ -182,7 +182,7 @@ function Product() {
         {/* add to cart */}
         <div>
           <button 
-            onClick={loading? null : handleClick}
+            onClick= {handleClick}
             className="text-white font-medium text-sm bg-blue-300 hover:bg-blue-600 w-full  p-2 mt-6 mb-2  focus:outline-none  "
           >
             {" "}

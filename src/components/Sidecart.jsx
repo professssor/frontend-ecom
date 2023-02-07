@@ -15,7 +15,9 @@ function Sidecart() {
 
   // value of the cart array  to be used
   const products = useRecoilValue(cartState);
-  console.log(products)
+
+  
+
 
 
 
@@ -39,7 +41,7 @@ function Sidecart() {
   };
 
   const stripePromise = loadStripe(
-    "pk_test_51MOIJVSCmAaBuDjlj1RTcllJ40qXnadwbb4IrQjVAtHXhz4UUaIGr6RMkWYfmp8ZejXT5V2M2I948hCNWKDCicmn00liTJIwGc"
+    "pk_test_51MOIJVSCmAaBuDjlKZ19ZHIXKcQq2HpRVl7lMM1oZOwM3GUTi3Ym1ekZehtpJSMRDBeWJsHsyTec6U3at25iJ10d00myYvfjnB"
   );
   // function to handle stripe integration 
   const handlePayment = async () => {
@@ -51,13 +53,10 @@ function Sidecart() {
       const res = await axiosInstance.post("/orders", {
         products,
       });
+   
+
+  await stripe.redirectToCheckout({sessionId:res.data.stripeSession.id})
     
-
-  
-         await stripe.redirectToCheckout({
-        sessionId: res.data.stripeSession.id
-
-      });
 
     } catch (error) {
       console.log(error);
