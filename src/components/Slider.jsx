@@ -24,10 +24,8 @@ const Slider = () => {
  
   return (
     <div className=''>
-      <div className="noSlider sm:hidden">
-        <img  className='image-dimension' src= {data[0]} alt="" />
-      </div>
-      <div className='hidden sm:block'> 
+   
+      <div className=''> 
         <div style={{transform: `translateX(-${currentSlide*100}vw)`}} className="image-container   xs:w-screen flex  " > <img  className ="image-dimension"src={data[0]} alt="" />
     <img  className ="image-dimension"src={data[1]} alt="" />
     <img  className ="image-dimension"src={data[2]} alt="" />
