@@ -257,12 +257,10 @@ body::-webkit-scrollbar {
   }
   .compare-buttons {
     height: 2rem;
-    width: 25rem;
-    display: flex;
 
     outline: none;
     border: none;
-    margin: 0.5rem 0;
+    margin: 1rem;
   }
   .compare-buttons > * {
     margin: 0 1rem;

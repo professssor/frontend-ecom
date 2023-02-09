@@ -136,7 +136,7 @@ function Product() {
       )}
 
       {/* right part of the page */}
-      <div className="rightpart mt-0    ">
+      <div className="rightpart mt-0 text-center md:text-left   ">
         <div className="details my-4 ">
           <h1 className=" m-2 text-2xl font-black capitalize">
             {data?.attributes?.title}{" "}
@@ -146,13 +146,14 @@ function Product() {
             <span className="text-green-400">₹</span>{" "}
             <span className="font-semibold text-xl ">
               {" "}
+              
               {data?.attributes?.price}
             </span>{" "}
           </h5>
           <p className=" m-2 lorem-text relative  ">{data?.attributes?.desc}</p>
         </div>
         {/* container for the button for quantity */}
-        <div className="quantity-button-container   flex items-center  w-32 justify-between my-6 ">
+        <div className="quantity-button-container   flex items-center  sm:w-32 justify-between my-6 ">
           {/* minus button */}
           <section className="">
             <button
@@ -192,11 +193,11 @@ function Product() {
             <AddShoppingCartIcon />      Add to cart
           </button>
         {/* error text hidden div */}
-          <div className=  {`moreThanOneItemAlert   ${revealText?"": "hidden" }  w-8/12 bg-gray-200 text-xs text-center h-8 rounded-full  `}>
+          <div className=  {`moreThanOneItemAlert   ${revealText?"": "hidden" } p-2  md:w-8/12 bg-gray-200 text-xs text-center xs:h-12 md:h-8 rounded-full  `}>
           <span className=" text-yellow-500 m-2"><ErrorOutlineIcon/></span>  
            <span>item is already present in cart, click again to increase the quantity  </span> </div>
           {/* wishlist button */}
-          <div className="compare-buttons  text-xs font-thin flex ">
+          <div className="compare-buttons  text-xs font-thin ">
             <button className="focus:outline-none">
               {" "}
               <span className="text-red-400  ">
@@ -212,7 +213,7 @@ function Product() {
             </button>
           </div>
           <hr className="w-10/12" />
-          <div className="lorem-text p-1 my-4 capitalize">
+          <div className="lorem-text p-1 my-4 capitalize text-center md:text-left">
             {/* miscleniouss information */}
             <h6 className="my-1">Lorem ipsum .</h6>
             <h6 className="my-1">
@@ -222,7 +223,7 @@ function Product() {
             <h6 className="my-1">Lorem ipsum dolor sit.</h6>
           </div>
           <hr className="w-10/12" />
-          <div className="lorem-text p-2  ">
+          <div className="lorem-text p-2 text-center md:text-left  ">
             <h3>description</h3>
             <hr className="w-10/12" />
             <h3>additional information</h3>

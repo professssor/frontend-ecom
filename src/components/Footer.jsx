@@ -14,10 +14,10 @@
         <h2 className='text-sm text-black font-medium'>Catergories</h2>
 
 
-       <a className='hover:underline'  href="/products/1"><p>Football</p></a>
-       <a className='hover:underline'  href="/products/2"><p>Cleats</p></a>
-       <a className='hover:underline'  href="/products/3"><p>Equipments</p></a>
-       <a className='hover:underline'  href="/products/4"><p>Apparel</p></a>
+       <a className='hover:underline'  href="/products/1"><p>Men</p></a>
+       <a className='hover:underline'  href="/products/2"><p>women</p></a>
+       <a className='hover:underline'  href="/#"><p>Kids</p></a>
+       
        </div>
        {/* second column */}
       <div className='   md:footerSubs w-6/12  '>
@@ -48,7 +48,7 @@
        </div>
 {/* **************************second part */}
     
-          <div className='w-full md:6/12 text-center mt-6 secondpart md:flex  md:flex-row md:justify-center mt-12  '>
+          <div className='w-full md:6/12 text-center  secondpart md:flex  md:flex-row md:justify-center mt-12  '>
             <div className=' md:mr-4   md:flex justify-end items-center space-x-2 '>
         <h1 className='font-semibold text-xs'>KickingKits.com</h1>
         <span className=' text-xs lorem-text  '>© Copyright 2023. All Rights Reserved</span>
