@@ -260,11 +260,8 @@ body::-webkit-scrollbar {
 
     outline: none;
     border: none;
-    margin: 1rem;
   }
-  .compare-buttons > * {
-    margin: 0 1rem;
-  }
+
   /* styles for the side cart product container */
   .sidecart-container {
     width: 22rem;

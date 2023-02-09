@@ -146,7 +146,7 @@ function Product() {
             <span className="text-green-400">₹</span>{" "}
             <span className="font-semibold text-xl ">
               {" "}
-              
+
               {data?.attributes?.price}
             </span>{" "}
           </h5>
@@ -197,22 +197,22 @@ function Product() {
           <span className=" text-yellow-500 m-2"><ErrorOutlineIcon/></span>  
            <span>item is already present in cart, click again to increase the quantity  </span> </div>
           {/* wishlist button */}
-          <div className="compare-buttons  text-xs font-thin ">
-            <button className="focus:outline-none">
+          <div className="compare-buttons  text-xs font-thin  h-max my-6">
+            <button className="focus:outline-none my-2">
               {" "}
               <span className="text-red-400  ">
                 <FavoriteBorderIcon />{" "}
               </span>{" "}
               ADD TO WISHLIST
             </button>
-            <button className="focus:outline-none">
+            <button className="focus:outline-none my-">
               <span className="text-green-400 ">
                 <BalanceIcon />{" "}
               </span>{" "}
               Add TO COMPARE{" "}
             </button>
           </div>
-          <hr className="w-10/12" />
+          <hr className=" w-10/12" />
           <div className="lorem-text p-1 my-4 capitalize text-center md:text-left">
             {/* miscleniouss information */}
             <h6 className="my-1">Lorem ipsum .</h6>

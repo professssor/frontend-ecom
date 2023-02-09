@@ -17,7 +17,7 @@ function Contact() {
             </form>
            
         </div>
-        <div className='third  flex   md:space-y-1 justify-between  md:space-x-3 md:flex-wrap '>
+        <div className='third hidden  md:flex   md:space-y-1 justify-between  md:space-x-3 md:flex-wrap '>
            < FacebookIcon/>
               < InstagramIcon/>
                  < TwitterIcon/>
