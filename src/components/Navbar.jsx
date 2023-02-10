@@ -88,10 +88,10 @@ export default function Navbar() {
             <KeyboardArrowDownIcon className="text-gray-400" />
           </div>
 
-          <a href="/products/2">
+          <a href="/products/1">
             <p className="selection:text-purple-900">Men</p>
           </a>
-          <a href="/products/3">
+          <a href="/products/2">
             <p>Women</p>
           </a>
       
