@@ -9,6 +9,7 @@ import Sidecart from "./Sidecart";
 import { useRecoilValue } from "recoil";
 import cartState from "../atoms/cart";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -56,14 +57,16 @@ export default function Navbar() {
         {openNav ? (
           <div className=" lg:hidden bg-black  options-container  text-white h-64 text-center ">
             <div className=" link-container">
-            <a href="/products/1" className=" text-lg p-1  hover:text-gray-500">
-              <h3 className="tittle">Men</h3>
-            </a>
+                <Link to={"/products/1"}>  <a className=" text-lg p-1 hover:text-gray-500">
+              <h3>Men</h3>
+            </a></Link>
+          
+            
                 
-       
-            <a href="/products/2" className=" text-lg p-1 hover:text-gray-500">
+       <Link to={"/products/2"}>  <a className=" text-lg p-1 hover:text-gray-500">
               <h3>Women</h3>
-            </a>
+            </a></Link>
+          
             
                  
         
@@ -87,14 +90,15 @@ export default function Navbar() {
             </a>
             <KeyboardArrowDownIcon className="text-gray-400" />
           </div>
-
-          <a href="/products/1">
+<Link to={"/products/1"}>   <a href="/products/1">
             <p className="selection:text-purple-900">Men</p>
-          </a>
-          <a href="/products/2">
+          </a></Link>
+          <Link to={"/products/2"}> <a href="/products/2">
             <p>Women</p>
           </a>
-      
+      </Link>
+       
+         
          
           {/* <a href="/products/5">
             <p>Kids</p>
